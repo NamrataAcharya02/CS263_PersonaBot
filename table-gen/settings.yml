@@ -1,10 +1,10 @@
 ## Settings for the jsonParser. ##
 ## Edit entries below to have them reflect in the parser ##
 
-SRC_JSON: Career_advice_ESFP_prompt2_1.json
-SRC_DIR: ./Prompt2/
+SRC_JSON: Adventure_trip_INTJ_prompt4_1.json
+SRC_DIR: ./Prompt4/
 
-DEST_CSV: Career_advice_ESFP_prompt2_1.csv
-DEST_DIR: ./CSV_files/Prompt2/
+DEST_CSV: Adventure_trip_INTJ_prompt4_1.csv
+DEST_DIR: ./CSV_files/Prompt4/
 
 ANNOTATION_COLS: [compassion_score, coherence_score, correctness]
