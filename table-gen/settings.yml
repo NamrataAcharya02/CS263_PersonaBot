@@ -1,0 +1,10 @@
+## Settings for the jsonParser. ##
+## Edit entries below to have them reflect in the parser ##
+
+SRC_JSON: Career_advice_INTJ_prompt1_2.json
+SRC_DIR: ./data/
+
+DEST_CSV: test.csv
+DEST_DIR: ./
+
+ANNOTATION_COLS: [compassion_score, coherence_score, correctness]
