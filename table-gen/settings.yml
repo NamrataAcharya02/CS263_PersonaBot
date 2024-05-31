@@ -1,10 +1,10 @@
 ## Settings for the jsonParser. ##
 ## Edit entries below to have them reflect in the parser ##
 
-SRC_JSON: Romantic_ESFP_prompt1_1.json
-SRC_DIR: ./Prompt1/
+SRC_JSON: Romantic_ESFP_prompt4_2.json
+SRC_DIR: ./Prompt4/
 
-DEST_CSV: Romantic_ESFP_prompt1_1.csv
-DEST_DIR: ./CSV_files/Prompt1/
+DEST_CSV: Romantic_ESFP_prompt4_2.csv
+DEST_DIR: ./CSV_files/Prompt4/
 
 ANNOTATION_COLS: [compassion_score, coherence_score, correctness]
