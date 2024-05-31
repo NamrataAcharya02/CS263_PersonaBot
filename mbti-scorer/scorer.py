@@ -3,7 +3,7 @@ from settings import config
 from questionMapping import mapping
 import jellyfish
 
-json_filename = config["SRC_DIR"] + "ESFP_pre_convo_test_4.json"
+json_filename = config["SRC_DIR"] + "INTJ_pre_convo_test_4.json"
 
 def similar(a,b):
     return jellyfish.jaro_similarity(a, b)
@@ -24,19 +24,19 @@ def calc_type(extroversion,sensing,feeling,prospecting):
     result = []
     if extroversion >0:
         result.append("E")
-    else:
+    elif extroversion <0:
         result.append("I")
     if sensing > 0:
         result.append("S")
-    else:
+    elif sensing < 0:
         result.append("N")
     if feeling >0:
         result.append("F")
-    else:
+    elif feeling <0:
         result.append("T")
     if prospecting > 0:
         result.append("P")
-    else:
+    elif prospecting <0:
         result.append("J")
     return "".join(result)
 
