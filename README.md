@@ -1,4 +1,13 @@
 # CS263_PersonaBot
+
+## Chatbot_persona.ipynb
+
+This is the notebook used on GCP to interact with the Llama-3 model, generate conversations, convert them to structured json files and conduct the MBTI test.
+
+## Annotation data:
+
+This folder contains all the annotated files across all 4 prompts that was used for calculation of metrics for analysis.
+
 ## Annotation guidelines:
 
 This folder contains the guidelines for the 3 evaluation metrics used: coherence, compassion, correctness. Each guideline contains guiding information and instructions for annotating the generated conversations. 
@@ -25,10 +34,10 @@ if p_4 <0 then judging, if >0 then prospecting
 
 `scorer.py` takes a json file representing the responses of a chatbot to the questions posed in questionMapping, and scores it according to the above criteria. It will then at the end print out the letters corresponding to the personality type
 
-##Kappa.py
+## Kappa.py
 
 This file calculates Cohen's Kappa to measure inter annotater agreement for 2 different pairs of annotators. 
 
-##Metrics_calculator.py
+## Metrics_calculator.py
 
 This file automatically calculates coherence, compassion and correctness averages for each annotated file. 
