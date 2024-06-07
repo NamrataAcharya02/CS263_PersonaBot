@@ -1,5 +1,7 @@
 # CS263_PersonaBot
+## Annotation guidelines:
 
+This folder contains the guidelines for the 3 evaluation metrics used: coherence, compassion, correctness. Each guideline contains guiding information and instructions for annotating the generated conversations. 
 ## table_gen:
 This folder contains code to facilitate converting the json files of chatbot conversations into CSV files with the desired format. The generated CSV files are in the folder `CSV_files`. 
 To use this, please edit the settings.yml in `./table_gen/` and change the input json and output csv names. Make sure you include the extension at the end. 
@@ -22,3 +24,11 @@ if p_3 <0 then thinking, if >0 then feeling
 if p_4 <0 then judging, if >0 then prospecting
 
 `scorer.py` takes a json file representing the responses of a chatbot to the questions posed in questionMapping, and scores it according to the above criteria. It will then at the end print out the letters corresponding to the personality type
+
+##Kappa.py
+
+This file calculates Cohen's Kappa to measure inter annotater agreement for 2 different pairs of annotators. 
+
+##Metrics_calculator.py
+
+This file automatically calculates coherence, compassion and correctness averages for each annotated file. 
